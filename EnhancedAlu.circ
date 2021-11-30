@@ -4,14 +4,25 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="fanout" val="4"/>
-      <a name="incoming" val="4"/>
+      <a name="fanout" val="32"/>
+      <a name="incoming" val="32"/>
     </tool>
     <tool name="Pin">
-      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="32"/>
     </tool>
     <tool name="Probe">
       <a name="appearance" val="NewPins"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="2"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
       <a name="value" val="0x0"/>
@@ -2518,18 +2529,22 @@ end TCL_Generic;&#13;
       <a name="facing" val="west"/>
       <a name="label" val="Result"/>
       <a name="output" val="true"/>
-      <a name="radix" val="10signed"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(1170,150)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
-      <a name="label" val="ZeroOutput"/>
+      <a name="label" val="ErrorBit"/>
       <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(230,100)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
     <comp lib="0" loc="(230,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Op"/>
+      <a name="label" val="Opcode"/>
       <a name="width" val="4"/>
     </comp>
     <comp lib="0" loc="(240,200)" name="Pin">
@@ -2540,13 +2555,13 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(270,130)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="B"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(270,50)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="A"/>
-      <a name="radix" val="10unsigned"/>
+      <a name="radix" val="16"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(280,150)" name="Splitter">
@@ -2561,6 +2576,10 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(370,240)" name="Splitter">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="0" loc="(470,40)" name="Probe">
+      <a name="appearance" val="NewPins"/>
+      <a name="radix" val="10unsigned"/>
     </comp>
     <comp lib="0" loc="(830,430)" name="Bit Extender">
       <a name="in_width" val="1"/>
@@ -2586,16 +2605,19 @@ end TCL_Generic;&#13;
     <wire from="(1050,100)" to="(1100,100)"/>
     <wire from="(1130,150)" to="(1130,580)"/>
     <wire from="(1130,150)" to="(1170,150)"/>
+    <wire from="(230,100)" to="(280,100)"/>
     <wire from="(230,180)" to="(270,180)"/>
     <wire from="(240,200)" to="(250,200)"/>
     <wire from="(250,200)" to="(250,310)"/>
     <wire from="(250,310)" to="(570,310)"/>
-    <wire from="(270,130)" to="(330,130)"/>
+    <wire from="(270,130)" to="(280,130)"/>
     <wire from="(270,150)" to="(270,180)"/>
     <wire from="(270,150)" to="(280,150)"/>
     <wire from="(270,50)" to="(280,50)"/>
+    <wire from="(280,100)" to="(280,130)"/>
+    <wire from="(280,130)" to="(330,130)"/>
     <wire from="(280,50)" to="(280,90)"/>
-    <wire from="(280,90)" to="(490,90)"/>
+    <wire from="(280,90)" to="(390,90)"/>
     <wire from="(290,170)" to="(290,210)"/>
     <wire from="(290,210)" to="(1030,210)"/>
     <wire from="(290,210)" to="(290,600)"/>
@@ -2618,6 +2640,11 @@ end TCL_Generic;&#13;
     <wire from="(350,200)" to="(350,220)"/>
     <wire from="(360,190)" to="(360,220)"/>
     <wire from="(370,240)" to="(510,240)"/>
+    <wire from="(390,100)" to="(480,100)"/>
+    <wire from="(390,90)" to="(390,100)"/>
+    <wire from="(390,90)" to="(490,90)"/>
+    <wire from="(470,40)" to="(480,40)"/>
+    <wire from="(480,40)" to="(480,100)"/>
     <wire from="(490,290)" to="(490,430)"/>
     <wire from="(490,290)" to="(570,290)"/>
     <wire from="(490,430)" to="(570,430)"/>
