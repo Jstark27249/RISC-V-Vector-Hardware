@@ -22,7 +22,8 @@ def tohex(val, nbits):
 # opcodes
 # 0111 = subtraction
 # 0011 = addition
-# 0000 = bit shift b input left by shift input amount
+# 0000 = bit shift b input left by shift input amount (currently I do not have a auto generator for this operation at the moment but you can play around with it anyway in the circ file if you want)
+# bit shifting is probably the least interesting thing its literally shift left or right by 0-32 bits
 
 def generateBinaryListAddition(list):
     tempList = []
