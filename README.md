@@ -6,9 +6,11 @@ to run a test vector in logism evolution its pretty simple you go to simulate an
 
 # Dependencies
 Python 3
+------
 Logism Evolution
+------
 Java 8 or newer
-
+------
 
 Python Instructions
 1. to make a test file you will need python 3 and ideally some idea (pycharm is probably the easiest) to run it with  but you can do the command line
