@@ -302,7 +302,8 @@ end TCL_Generic;&#13;
       <a name="fanout" val="8"/>
       <a name="incoming" val="8"/>
     </comp>
-    <comp lib="0" loc="(790,1320)" name="Clock">
+    <comp lib="0" loc="(810,1320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
       <a name="label" val="ClockIn"/>
     </comp>
     <comp lib="0" loc="(810,1340)" name="Pin">
@@ -2202,7 +2203,6 @@ end TCL_Generic;&#13;
     <wire from="(7890,1780)" to="(7930,1780)"/>
     <wire from="(7890,970)" to="(7890,1780)"/>
     <wire from="(7890,970)" to="(7910,970)"/>
-    <wire from="(790,1320)" to="(850,1320)"/>
     <wire from="(7900,1770)" to="(7930,1770)"/>
     <wire from="(7900,960)" to="(7900,1770)"/>
     <wire from="(7900,960)" to="(7910,960)"/>
@@ -2212,6 +2212,7 @@ end TCL_Generic;&#13;
     <wire from="(7950,2080)" to="(7950,2090)"/>
     <wire from="(7950,2090)" to="(7950,2390)"/>
     <wire from="(7970,1930)" to="(8120,1930)"/>
+    <wire from="(810,1320)" to="(850,1320)"/>
     <wire from="(810,1340)" to="(840,1340)"/>
     <wire from="(8120,1630)" to="(8120,1930)"/>
     <wire from="(8120,1630)" to="(8150,1630)"/>

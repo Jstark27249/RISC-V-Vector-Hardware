@@ -215,39 +215,127 @@ end TCL_Generic;&#13;
     <a name="clabelup" val="east"/>
     <a name="downloadFrequency" val="-1.0"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(170,340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="regWrite"/>
+    </comp>
+    <comp lib="0" loc="(170,400)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="clearRegisters"/>
+    </comp>
+    <comp lib="0" loc="(170,420)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="clockIn"/>
+    </comp>
+    <comp lib="0" loc="(210,220)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="DataAddressInA"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(210,240)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="DataAddressInB"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(210,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ReadDataInA"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(210,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ReadDataInB"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(210,300)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ReadDataInC"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(210,320)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="ReadDataInD"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(210,360)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="bitShiftIn"/>
+      <a name="width" val="5"/>
+    </comp>
+    <comp lib="0" loc="(220,380)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="opCode"/>
+      <a name="width" val="6"/>
+    </comp>
+    <comp lib="0" loc="(240,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="WriteDataIn"/>
+      <a name="radix" val="10unsigned"/>
+      <a name="width" val="32"/>
+    </comp>
     <comp lib="0" loc="(980,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="PortA"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(980,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="PortB"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(980,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="PortC"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(980,260)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="PortD"/>
       <a name="output" val="true"/>
-      <a name="radix" val="16"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="15" loc="(530,200)" name="RegisterFile"/>
     <comp loc="(850,200)" name="SimdShader"/>
-    <wire from="(270,540)" to="(570,540)"/>
-    <wire from="(270,560)" to="(590,560)"/>
-    <wire from="(270,580)" to="(600,580)"/>
+    <wire from="(170,340)" to="(230,340)"/>
+    <wire from="(170,400)" to="(290,400)"/>
+    <wire from="(170,420)" to="(250,420)"/>
+    <wire from="(210,220)" to="(310,220)"/>
+    <wire from="(210,240)" to="(310,240)"/>
+    <wire from="(210,260)" to="(310,260)"/>
+    <wire from="(210,280)" to="(310,280)"/>
+    <wire from="(210,300)" to="(310,300)"/>
+    <wire from="(210,320)" to="(310,320)"/>
+    <wire from="(210,360)" to="(280,360)"/>
+    <wire from="(220,380)" to="(300,380)"/>
+    <wire from="(230,340)" to="(230,350)"/>
+    <wire from="(230,350)" to="(300,350)"/>
+    <wire from="(240,200)" to="(310,200)"/>
+    <wire from="(250,340)" to="(250,420)"/>
+    <wire from="(250,340)" to="(310,340)"/>
+    <wire from="(250,420)" to="(280,420)"/>
+    <wire from="(280,360)" to="(280,370)"/>
+    <wire from="(280,370)" to="(310,370)"/>
+    <wire from="(280,420)" to="(280,590)"/>
+    <wire from="(280,590)" to="(630,590)"/>
+    <wire from="(290,400)" to="(290,580)"/>
+    <wire from="(290,580)" to="(600,580)"/>
+    <wire from="(300,350)" to="(300,360)"/>
+    <wire from="(300,360)" to="(310,360)"/>
+    <wire from="(300,380)" to="(300,560)"/>
+    <wire from="(300,560)" to="(590,560)"/>
+    <wire from="(310,370)" to="(310,540)"/>
+    <wire from="(310,540)" to="(570,540)"/>
     <wire from="(530,200)" to="(630,200)"/>
     <wire from="(530,220)" to="(630,220)"/>
     <wire from="(530,240)" to="(630,240)"/>
@@ -258,6 +346,7 @@ end TCL_Generic;&#13;
     <wire from="(590,300)" to="(630,300)"/>
     <wire from="(600,320)" to="(600,580)"/>
     <wire from="(600,320)" to="(630,320)"/>
+    <wire from="(630,340)" to="(630,590)"/>
     <wire from="(850,200)" to="(980,200)"/>
     <wire from="(850,220)" to="(980,220)"/>
     <wire from="(850,240)" to="(980,240)"/>
@@ -293,13 +382,13 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(280,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Ain"/>
-      <a name="radix" val="float"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(280,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Bin"/>
-      <a name="radix" val="float"/>
+      <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(280,220)" name="Pin">
@@ -442,12 +531,13 @@ end TCL_Generic;&#13;
       <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
-    <comp lib="0" loc="(170,530)" name="Clock">
-      <a name="label" val="ClockIn"/>
-    </comp>
-    <comp lib="0" loc="(190,510)" name="Pin">
+    <comp lib="0" loc="(170,510)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="label" val="ClearRegisters"/>
+    </comp>
+    <comp lib="0" loc="(170,530)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="clockIn"/>
     </comp>
     <comp lib="0" loc="(200,250)" name="Pin">
       <a name="appearance" val="NewPins"/>
@@ -818,8 +908,8 @@ end TCL_Generic;&#13;
     <wire from="(1110,290)" to="(1110,400)"/>
     <wire from="(1110,400)" to="(1110,510)"/>
     <wire from="(1110,510)" to="(1110,750)"/>
+    <wire from="(170,510)" to="(400,510)"/>
     <wire from="(170,530)" to="(300,530)"/>
-    <wire from="(190,510)" to="(400,510)"/>
     <wire from="(200,240)" to="(200,250)"/>
     <wire from="(200,240)" to="(220,240)"/>
     <wire from="(200,270)" to="(220,270)"/>
