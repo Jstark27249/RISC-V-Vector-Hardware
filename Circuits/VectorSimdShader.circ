@@ -4,16 +4,17 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="appear" val="center"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
     </tool>
     <tool name="Pin">
-      <a name="facing" val="north"/>
+      <a name="appearance" val="NewPins"/>
     </tool>
     <tool name="Probe">
-      <a name="radix" val="16"/>
+      <a name="appearance" val="NewPins"/>
     </tool>
     <tool name="Tunnel">
-      <a name="width" val="2"/>
+      <a name="width" val="32"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -22,8 +23,7 @@
       <a name="facing" val="north"/>
     </tool>
     <tool name="Constant">
-      <a name="value" val="0xff"/>
-      <a name="width" val="32"/>
+      <a name="value" val="0x0"/>
     </tool>
   </lib>
   <lib desc="#Gates" name="1">
@@ -92,9 +92,7 @@
       <a name="appearance" val="logisim_evolution"/>
     </tool>
     <tool name="RAM">
-      <a name="addrWidth" val="24"/>
       <a name="appearance" val="logisim_evolution"/>
-      <a name="dataWidth" val="64"/>
     </tool>
     <tool name="ROM">
       <a name="appearance" val="logisim_evolution"/>
@@ -142,7 +140,7 @@ end TCL_Generic;&#13;
       <a name="SocBusSelection" val=""/>
     </tool>
     <tool name="SocBus">
-      <a name="SocBusIdentifier" val="0x0000017C908C85147f375744"/>
+      <a name="SocBusIdentifier" val="0x0000017C0561F8F015a1c485"/>
     </tool>
     <tool name="Socmem">
       <a name="SocBusSelection" val=""/>
