@@ -1,7 +1,7 @@
 # RISC-V-Vector and Shader-Hardware Designs in logism
-includes a few python scripts to generate logism evolution test vector files for various components
-code is commented with description of how the script works
-to run a test vector in logism evolution its pretty simple you go to simulate and run the file
+
+This repository contains the backend of RISC-V compliant rudimentary shader core/vector processo. It also contains some basic test scripts to automate testing via logism-evolutions test vector feature. The Shader execute backend I then packed into a full simd execute capable of operating on a 128 bit vector to pair with a large register file to complete the full basic shader core. Hopefully someone can find a use for this for thier own projects or learning purposes.
+
 
 
 # Dependencies
@@ -28,4 +28,5 @@ Logism Instructions
 5. now load one of the txt files from earlier, they should all run on the sub circuit labeled ShaderExecutBackend in the VectorSimdShader File
 6. It is important to note with regards to the floating point testing the results have a range of about +/-1 bit as a result of the imprecise nature of floating point arithmetic. You should expect to see a false negative about 50% as a result of the imperfect of lossy conversion to binary and the  impresise nature of floating point mathematics. So when you run a floating point script expect about 50% failure rate but said failed outputs should only ever be about +/- 1 bit from the expected. When you run a test vector in logism you can mouse or the result to see the level of error. If its within that range it means its a false negative and its working as intended.
 7. IF your still confused on how to run a test vector here is a video on not just how to run one but how to make one aswell. https://www.youtube.com/watch?v=GdDnEPFlXbI
+8. Alternatively you can skip the test vector stuff and just play around with the design manually.
 
