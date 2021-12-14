@@ -1,26 +1,32 @@
 # RISC-V-Vector and Shader-Hardware Designs in logism
 
-This repository contains the backend of RISC-V compliant rudimentary shader core/vector processo. It also contains some basic test scripts to automate testing via logism-evolutions test vector feature. The Shader execute backend I then packed into a full simd execute capable of operating on a 128 bit vector to pair with a large register file to complete the full basic shader core. Hopefully someone can find a use for this for thier own projects or learning purposes.
+# Goal
+Goal of this project was to build some basic RISC-V compliant vector hardware. I have decided to put it all on github cause learning about this topic was miserable as its all scattered through research papers and obscure power points. So I want to make this work easy for anyone interest to play around with it. This repository contains the backend of RISC-V compliant rudimentary shader core/vector processor. It also contains some basic test scripts to automate testing via logism-evolutions test vector feature. The Shader execute backend I then packed into a full simd execute capable of operating on a 128 bit vector to pair with a large register file to complete the full basic shader core. Hopefully someone can find a use for this for their own projects or learning purposes.
 
+# Includes
+1. Test scripts in python along with txt files that correspond to said script
+2. All Circuit Files Used
+3. Photos of circuits with comments
 
-
-# Dependencies
+# Dependencies 
 Python 3
-------
+https://www.python.org/downloads/
+-----------------
 Logism Evolution
-------
+https://github.com/logisim-evolution/logisim-evolution
+-----------------
 Java 8 or newer
-------
+https://adoptium.net/
+-----------------
 
-Python Instructions
+# Python Instructions
 0. You will need the python libraries numpy, struct, and random. If you open the scripts in pycharm it will make things much easier to work with and should install the packages for you.
 1. to make a test file you will need python 3 and ideally some idea (pycharm is probably the easiest) to run it with  but you can do the command line
 2. put the text files in the same directory as the python scripts each test file has a corosponding test script
 3. now you should have some freshly generated test files.
 4. To modify the test to make different ones edit the scripts, they are commented to make it easier. 
 
-
-Logism Instructions
+# Logism Instructions
 1. open logism evolution
 2. go to file open and navigate to wererever you got the circ files and open it
 3. now that the file is open go to simulate up at the top and click on test vector
