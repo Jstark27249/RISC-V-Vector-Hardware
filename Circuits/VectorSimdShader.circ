@@ -362,9 +362,16 @@ end TCL_Generic;&#13;
     <comp lib="0" loc="(1020,190)" name="Probe">
       <a name="radix" val="float"/>
     </comp>
+    <comp lib="0" loc="(1060,510)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ErrorBit"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(1070,370)" name="Pin">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="west"/>
+      <a name="label" val="Result"/>
       <a name="output" val="true"/>
       <a name="radix" val="10signed"/>
       <a name="width" val="32"/>
@@ -379,24 +386,24 @@ end TCL_Generic;&#13;
     </comp>
     <comp lib="0" loc="(280,180)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Ain"/>
+      <a name="label" val="A"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(280,200)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="Bin"/>
+      <a name="label" val="B"/>
       <a name="radix" val="10unsigned"/>
       <a name="width" val="32"/>
     </comp>
     <comp lib="0" loc="(280,220)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="OpCode"/>
+      <a name="label" val="Opcode"/>
       <a name="width" val="6"/>
     </comp>
     <comp lib="0" loc="(280,240)" name="Pin">
       <a name="appearance" val="NewPins"/>
-      <a name="label" val="ShiftIn"/>
+      <a name="label" val="shiftAmount"/>
       <a name="width" val="5"/>
     </comp>
     <comp lib="0" loc="(330,160)" name="Splitter">
@@ -475,10 +482,13 @@ end TCL_Generic;&#13;
     <wire from="(510,450)" to="(550,450)"/>
     <wire from="(770,250)" to="(810,250)"/>
     <wire from="(770,370)" to="(950,370)"/>
+    <wire from="(770,390)" to="(810,390)"/>
     <wire from="(770,450)" to="(860,450)"/>
     <wire from="(810,140)" to="(810,250)"/>
     <wire from="(810,140)" to="(820,140)"/>
     <wire from="(810,250)" to="(920,250)"/>
+    <wire from="(810,390)" to="(810,510)"/>
+    <wire from="(810,510)" to="(1060,510)"/>
     <wire from="(860,380)" to="(860,440)"/>
     <wire from="(860,380)" to="(950,380)"/>
     <wire from="(860,440)" to="(1020,440)"/>
